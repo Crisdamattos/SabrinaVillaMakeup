@@ -9,6 +9,7 @@
 
 main {
     min-height: 100vh;
+    background-color: azure;
 }
 
 h1 {
@@ -137,10 +138,9 @@ footer p {
     }
 .index_boton a {
     text-decoration: none;
-    background-color: black;
-    color: #ff00c8;
-    border: 3px solid #ff00c8;
-    border-radius: 2%;
+    background-color: #ff00c8;
+    color: black;
+    font-weight: 600;
     padding: .5rem;
     }
 .index_boton a:hover {
@@ -153,15 +153,15 @@ footer p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    place-items: center;
-    margin-inline: 1rem;
+    aspect-ratio: 1;
+    padding-inline: 1rem;
     
     grid-template-areas:
-    "sobremi_image  sobremi_parrafo"
-    "sobremi_image3 sobremi_image4"
-    "sobremi_image1 sobremi_image2";
+    "sobremi_image sobremi_parrafo"
+    "sobremi_image3  sobremi_image4"
+    "sobremi_image1  sobremi_image2";
     }
 
 .sobremi_image {
@@ -183,6 +183,10 @@ footer p {
     grid-area: sobremi_image4;
     }
 
+.sobremi_parrafo h1 {
+    font-size: 36px;
+    font-weight: 600;
+    }
 .contenedor_sobremi img {
     margin: 1rem;
     padding: 1rem;    
@@ -219,7 +223,7 @@ footer p {
 .porfolio_titulo {
     font-size: 45px;
     text-align: center;
-    margin: 2rem;
+    padding: 2rem;
     }
 .porfolio_div {
     display: flex;
@@ -246,12 +250,6 @@ footer p {
     flex-wrap: wrap;
     justify-content: space-evenly;
     }
-.contacto_form {
-    color: black;
-    font-size: 26px;
-    font-weight: 600;
-    margin: 1rem;
-    }
 .contacto_main p {
     margin: 2rem;
     font-size: 30px;
@@ -259,12 +257,14 @@ footer p {
     text-align: center;
     }
 .contacto_ubicacion iframe {
-    padding: .5rem;
+    /* padding: .5rem; */
+    /* margin: 1rem; */
     background-color: #ff00c8;
     width: 100%;
+    border: 2px solid black;
     }
 input {
-    font-size: 24px;
-    text-align: center;
-    width: 100%;
-}
+    font-size: 20px;
+    margin-top: 1rem;
+    padding: .5rem;   
+    }

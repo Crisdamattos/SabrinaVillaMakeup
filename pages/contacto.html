@@ -51,31 +51,30 @@
 
             <img class="contacto_canvas" src="../images/contacto-canvas.png" alt="">
             <section class="contacto_main">
-                <section>                    
-                        <form class="contacto_form">
-                            <p>CONTACTA AQUÍ CON NOSOTROS</p>
-                            <div>
-                                <label for="nombre">Nombre:</label>
-                                <input type="text" placeholder="Ingrese su nombre" required id="nombre">
-                            </div>   
-                            <div>
-                                <label for="apellido">Apellido:</label>
-                                <input type="text" placeholder="Ingrese su apellido" required id="apellido">
-                            </div>                   
-                            <div>
-                                <label for="e-mail">E-mail:</label>
-                                <input type="email" placeholder="Ingrese su e-mail" required id="e-mail">
-                            </div>                
-                            <div>
-                                <p>COMENTARIO</p>                        
-                                <textarea name="" id="" cols="85" rows="12" placeholder="Ingrese su mensaje" required></textarea>
-                            </div>
 
-                            <div class="contacto_label">
-                                <input type="submit">
-                                <input type="reset">
-                            </div>              
-                        </form>
+                <section>
+                    <p>CONTACTA AQUÍ CON NOSOTROS</p>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Ingrese su nombre">
+                        <label for="floatingInput">Nombre</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Ingrese su apellido">
+                        <label for="floatingInput">Apellido</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="Ingrese su e-mail">
+                        <label for="floatingInput">Email</label>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 250px;"></textarea>
+                        <label for="floatingTextarea">Comentario</label>
+                    </div>
+
+                    <div class="contacto_label">
+                        <input type="submit">
+                        <input type="reset">
+                    </div>
                 </section>
            
                 <section class="contacto_ubicacion">
