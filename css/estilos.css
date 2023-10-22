@@ -138,14 +138,16 @@ footer p {
     }
 .index_boton a {
     text-decoration: none;
-    background-color: #ff00c8;
-    color: black;
+    border: 2px solid #ff00c8;
+    border-radius: 2%;
+    color:#ff00c8;
     font-weight: 600;
     padding: .5rem;
     }
 .index_boton a:hover {
     text-decoration: overline;
     color: white;
+    background-color: #ff00c8;
     }
 
 /* Sobre mi */
@@ -256,15 +258,6 @@ footer p {
     font-weight: 600;
     text-align: center;
     }
-.contacto_ubicacion iframe {
-    /* padding: .5rem; */
-    /* margin: 1rem; */
-    background-color: #ff00c8;
-    width: 100%;
-    border: 2px solid black;
-    }
-input {
-    font-size: 20px;
-    margin-top: 1rem;
-    padding: .5rem;   
+.contacto_ubicacion {
+    text-align: center;
     }
