@@ -77,7 +77,7 @@ footer p {
 .desc_prom {
     display: flex;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     margin-bottom: 1rem;
     background-color: #a89047;
     gap: 2rem;
@@ -86,7 +86,7 @@ footer p {
     color: black;
     border: 2px solid black;
     padding: 1rem;
-    margin: 1rem;
+    margin: 1rem;  
     }
 
 .contenedor_index {
@@ -134,7 +134,7 @@ footer p {
 
 .index_boton {
     font-size: 30px;
-    margin-top: 2rem; 
+    margin-top: 1.5rem; 
     }
 .index_boton a {
     text-decoration: none;
@@ -149,6 +149,7 @@ footer p {
     color: white;
     background-color: #ff00c8;
     }
+
 
 /* Sobre mi */
 .contenedor_sobremi {
@@ -188,6 +189,7 @@ footer p {
 .sobremi_parrafo h1 {
     font-size: 36px;
     font-weight: 600;
+    text-align: center;
     }
 .contenedor_sobremi img {
     margin: 1rem;
@@ -202,11 +204,11 @@ footer p {
 .servicios_section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    /* align-items: center; */
     }
 .servicios_section_parrafo {
-    width: 50%;
+    width: 70%;
     }
 .servicios_section h3 {
     font-size: 45px;
@@ -261,3 +263,73 @@ footer p {
 .contacto_ubicacion {
     text-align: center;
     }
+
+
+/* --- Media Queries para 992px / 768px / 576px --- */
+
+@media (max-width: 992px) {
+    
+    h1 {
+        font-size: 24px;
+        }
+    h2 {
+        font-size: 22px;
+        }
+    h3 {
+        font-size: 22px;
+        } 
+    h4 {
+        font-size: 18px;
+        }
+    p {
+        font-size: 18px;
+        }
+    .index_boton {
+        font-size: 18px;
+        margin-top: .5rem;
+        }
+    .navbar a {
+        font-size: 20px;
+        }
+    }
+
+@media (max-width: 768px) {
+
+    /*Inicio*/
+    .contenedor_index {
+        grid-template-columns: 1fr;
+        grid-template-rows: 6fr;
+        
+        grid-template-areas:
+        "index_parrafo1"  
+        "index_image1"
+        "index_parrafo2"
+        "index_image2"    
+        "index_parrafo3"  
+        "index_image3";
+        }
+    
+    /*Sobre mi*/
+    .contenedor_sobremi {
+        grid-template-columns: 1fr;
+        grid-template-rows: 6fr;
+
+        grid-template-areas:
+        "sobremi_parrafo"
+        "sobremi_image" 
+        "sobremi_image3"  
+        "sobremi_image4"
+        "sobremi_image1"  
+        "sobremi_image2";
+        }
+    
+    /*Servicios*/
+    .servicios_section h3 {
+        font-size: 34px;
+        }
+    }
+
+@media (max-width: 576px) {
+
+    }
+    
