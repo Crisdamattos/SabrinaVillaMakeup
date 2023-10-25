@@ -163,9 +163,10 @@ footer p {
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
+    margin-inline: 1rem;
+    gap: 1.5rem;
     aspect-ratio: 1;
-    padding-inline: 1rem;
-    
+
     grid-template-areas:
     "sobremi_image sobremi_parrafo"
     "sobremi_image3  sobremi_image4"
@@ -197,8 +198,7 @@ footer p {
     }
 .contenedor_sobremi img {
     margin: 1rem;
-    padding: 1rem;    
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 2% 0;
     width: 95%;
     }
@@ -211,7 +211,8 @@ footer p {
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
-    padding-inline: 2rem;
+    place-content: center;
+    padding-inline: 1rem;
     margin: 1rem;
     
     grid-template-areas:
@@ -230,20 +231,20 @@ footer p {
     }
 .servicios_image1 {
     grid-area: servicios_image1;
-    text-align: center;
     margin: 1rem;
     }
 .servicios_image2 {
     grid-area: servicios_image2;
-    text-align: center;
     margin: 1rem;
     }
 .servicios_image3 {
     grid-area: servicios_image3;
-    text-align: center;
     margin: 1rem;
     }
 
+.contenedor_servicios img {
+    width: 100%;
+    }
 
 /* Porfolio */
 .porfolio_section h3 {
@@ -252,14 +253,15 @@ footer p {
     padding: 2rem;
     }
 .porfolio_div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;  
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    margin-inline: 1rem;
+    gap: 1rem;
     }
-.porfolio_div_image {
-    padding: 1rem;
-    margin: 1.5rem .5rem;
-    border: 3px solid black;
+.porfolio_div img {
+    width: 100%;
+    border: 2px solid black;
     border-radius: 2% 0;
     }
 
@@ -271,13 +273,17 @@ footer p {
 .contacto_main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 2rem;
     }
 .contacto_main p {
     margin: 2rem;
     font-size: 30px;
     font-weight: 600;
     text-align: center;
+    }
+.contacto_formulario {
+    margin: 1rem;
     }
 .contacto_ubicacion {
     text-align: center;
@@ -356,6 +362,7 @@ footer p {
     .desc_prom {
         gap: 1.5rem;
         }
+
     
     /*Sobre mi*/
     .contenedor_sobremi {
@@ -370,4 +377,41 @@ footer p {
         "sobremi_image1"  
         "sobremi_image2";
         }   
+    }
+
+
+@media (max-width: 576px) {
+
+    h2 {
+        font-size: 16px;
+        }
+    p {
+        font-size: 16px;
+    }
+
+    /*Inicio*/
+    .desc_prom {
+        gap: .5rem;
+        }
+
+
+    /*Sobre mi*/
+    .contenedor_sobremi img {
+        margin-inline: 0;
+        }
+
+
+    /*Porfolio*/
+    .porfolio_section h3 {
+        font-size: 28px;
+        }
+    .porfolio_div {
+        flex-wrap: wrap;
+        }
+
+
+    /*Contacto*/
+    .contacto_main p {
+        font-size: 20px;
+        }
     }
