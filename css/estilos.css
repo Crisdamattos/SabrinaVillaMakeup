@@ -22,7 +22,7 @@ h1 {
 h2 {
     font-size: 30px;
     font-weight: 600;
-    margin-block: 2rem;   
+    margin-block: 1rem;   
     }
 h3 {
     font-size: 32px;
@@ -38,6 +38,13 @@ h4 {
 p {
     font-size: 24px;
     color: black;
+    }
+hr {
+    color: #ff00c8;
+    background-color: #ff00c8;
+    opacity: 1;
+    width: 40%;
+    height: .5rem;
     }
 
 /* Header */
@@ -87,13 +94,14 @@ footer p {
     justify-content: center;
     text-align: center;
     margin-bottom: 1rem;
+    padding-inline: .3rem;
     background-color: #a89047;
     gap: 3rem;
     }
 .desc_prom_item {
     color: black;
     border: 2px solid black;
-    padding: 1rem;
+    padding: .5rem;
     }
 
 .contenedor_index {
@@ -362,7 +370,6 @@ footer p {
     .desc_prom {
         gap: 1.5rem;
         }
-
     
     /*Sobre mi*/
     .contenedor_sobremi {
@@ -382,6 +389,9 @@ footer p {
 
 @media (max-width: 576px) {
 
+    h1 {
+        font-size: 18px;
+        }
     h2 {
         font-size: 16px;
         }
@@ -390,16 +400,18 @@ footer p {
     }
 
     /*Inicio*/
+    .navbar-brand img {
+        width: 55px;
+        height: 55px;
+        }
     .desc_prom {
         gap: .5rem;
         }
-
 
     /*Sobre mi*/
     .contenedor_sobremi img {
         margin-inline: 0;
         }
-
 
     /*Porfolio*/
     .porfolio_section h3 {
@@ -408,7 +420,6 @@ footer p {
     .porfolio_div {
         flex-wrap: wrap;
         }
-
 
     /*Contacto*/
     .contacto_main p {
