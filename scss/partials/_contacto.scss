@@ -1,0 +1,42 @@
+
+/* Contacto */
+
+main {
+    .contacto_canvas {
+        width: 100%;
+    }
+
+    .contacto_main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+
+        section {
+            p {
+            margin: 2rem;
+            font-size: 30px;
+            font-weight: 600;
+            text-align: center;
+
+                @media (max-width: 576px) {
+                    font-size: 20px;                       
+                }
+            }
+        }             
+        
+        .contacto_formulario {
+            margin-inline: 1rem;            
+
+            form {
+                .col-12 {
+                    display:inline;
+                }
+            }
+        }
+
+        .contacto_ubicacion {
+            text-align: center;            
+        }
+    }    
+}

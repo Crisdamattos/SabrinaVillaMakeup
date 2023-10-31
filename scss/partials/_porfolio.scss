@@ -1,0 +1,34 @@
+
+/* Porfolio */
+
+main {
+    .porfolio_section {
+        h3 {
+            font-size: 40px;
+            text-align: center;
+            padding: 2rem;
+
+            @media (max-width: 576px) {
+                font-size: 24px;
+            }
+        }
+
+        .porfolio_div {
+            display: flex; 
+            justify-content: space-evenly;
+            align-items: center;
+            margin-inline: 1rem;
+            gap: 1rem;
+
+            @media (max-width: 768px) {
+                flex-wrap: wrap;
+            }
+
+            img {
+                width: 100%;
+                border: 2px solid $colorSecundario;
+                border-radius: 2% 0;
+            }
+        }
+    }
+}

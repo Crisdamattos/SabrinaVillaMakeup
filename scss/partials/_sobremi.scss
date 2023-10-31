@@ -1,0 +1,73 @@
+
+/* Sobre mi */
+
+main {
+    .contenedor_sobremi {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        margin-inline: 1rem;
+        gap: 1.5rem;
+        aspect-ratio: 1;
+    
+        grid-template-areas:
+        "sobremi_image sobremi_parrafo"
+        "sobremi_image3  sobremi_image4"
+        "sobremi_image1  sobremi_image2";
+
+            @media (max-width: 768px) {            
+                grid-template-columns: 1fr;
+                grid-template-rows: 6fr;
+        
+                grid-template-areas:
+                "sobremi_parrafo"
+                "sobremi_image" 
+                "sobremi_image3"  
+                "sobremi_image4"
+                "sobremi_image1"  
+                "sobremi_image2";                
+            }
+
+        .sobremi_image {
+            grid-area: sobremi_image;
+        }   
+        .sobremi_parrafo {
+            grid-area: sobremi_parrafo;
+        }
+        .sobremi_image1 {
+            grid-area: sobremi_image1;
+        }
+        .sobremi_image2 {
+            grid-area: sobremi_image2;
+        }
+        .sobremi_image3 {
+            grid-area: sobremi_image3;
+        }
+        .sobremi_image4 {
+            grid-area: sobremi_image4;
+        }
+
+        .sobremi_parrafo {
+            h1 {
+                font-size: 36px;
+                font-weight: 600;
+                text-align: center;
+            }
+        }
+
+        div {
+            img {
+                margin: 1rem;
+                border: 3px solid $colorSecundario;
+                border-radius: 2% 0;
+                width: 95%;
+
+                @media (max-width: 576px) {                
+                    margin-inline: 0;                      
+                }
+            }
+        }
+    }    
+}

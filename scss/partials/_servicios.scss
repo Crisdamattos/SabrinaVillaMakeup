@@ -1,0 +1,61 @@
+
+/* Servicios */
+
+main {
+    .contenedor_servicios {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        place-content: center;
+        padding-inline: 1rem;
+        margin: 1rem;
+        
+        grid-template-areas:
+        "servicios_parrafo1 servicios_parrafo1 servicios_image1"
+        "servicios_parrafo2 servicios_parrafo2 servicios_image2"
+        "servicios_parrafo3 servicios_parrafo3 servicios_image3";
+
+            @media (max-width: 800px) {            
+                grid-template-columns: 1fr;
+                grid-template-rows: 6fr;
+                
+                grid-template-areas:
+                "servicios_parrafo1"
+                "servicios_image1"
+                "servicios_parrafo2"
+                "servicios_image2"
+                "servicios_parrafo3"
+                "servicios_image3";                   
+            }
+
+        .servicios_parrafo1 {
+            grid-area: servicios_parrafo1;
+        }   
+        .servicios_parrafo2 {
+            grid-area: servicios_parrafo2;
+        }
+        .servicios_parrafo3 {
+            grid-area: servicios_parrafo3;
+        }
+        .servicios_image1 {
+            grid-area: servicios_image1;
+            margin: 1rem;
+        }
+        .servicios_image2 {
+            grid-area: servicios_image2;
+            margin: 1rem;
+        }
+        .servicios_image3 {
+            grid-area: servicios_image3;
+            margin: 1rem;
+        }
+
+        div {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
