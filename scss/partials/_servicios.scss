@@ -5,17 +5,16 @@ main {
     .contenedor_servicios {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1.3fr;
         justify-content: center;
-        align-items: center;
         place-content: center;
         padding-inline: 1rem;
         margin: 1rem;
         
         grid-template-areas:
         "servicios_parrafo1 servicios_parrafo1 servicios_image1"
-        "servicios_parrafo2 servicios_parrafo2 servicios_image2"
-        "servicios_parrafo3 servicios_parrafo3 servicios_image3";
+        "servicios_parrafo3 servicios_parrafo3 servicios_image3"
+        "servicios_parrafo2 servicios_parrafo2 servicios_image2";
 
             @media (max-width: 800px) {            
                 grid-template-columns: 1fr;
@@ -24,17 +23,17 @@ main {
                 grid-template-areas:
                 "servicios_parrafo1"
                 "servicios_image1"
-                "servicios_parrafo2"
-                "servicios_image2"
                 "servicios_parrafo3"
-                "servicios_image3";                   
+                "servicios_image3"
+                "servicios_parrafo2"
+                "servicios_image2";                   
             }
 
         .servicios_parrafo1 {
             grid-area: servicios_parrafo1;
         }   
         .servicios_parrafo2 {
-            grid-area: servicios_parrafo2;
+            grid-area: servicios_parrafo2;                   
         }
         .servicios_parrafo3 {
             grid-area: servicios_parrafo3;
@@ -53,8 +52,24 @@ main {
         }
 
         div {
+            ul{
+                font-size: 24px;
+
+                    @media (max-width: 992px) {
+                        font-size: 18px;
+                    }
+                    @media (max-width: 576px) {
+                        font-size: 16px;
+                    }
+            }
+        }
+
+        div {
             img {
                 width: 100%;
+                padding: 5px;
+                border: 2px solid $colorSecundario;
+                border-radius: 2% 0;
             }
         }
     }

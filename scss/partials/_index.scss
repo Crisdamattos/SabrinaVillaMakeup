@@ -74,26 +74,31 @@ main {
         .index_parrafo {
             margin: 1rem;
             
+            p {
+                text-align: justify;
+            }
+            
             .index_boton {
                 font-size: 30px;
                 margin-top: 1.5rem;
-
+                text-align: center;
+               
                     @media (max-width: 992px) {
                         font-size: 18px;
                         margin-top: .5rem;                        
                     }
             
-                    a {
+                a {
                     text-decoration: none;
                     border: 2px solid $colorPrincipal;
                     border-radius: 2%;
                     color: $colorPrincipal;
                     font-weight: 600;
                     padding: .5rem;
-
+                    
                     &:hover {
                         color: white;
-                        background-color: $colorPrincipal;
+                        background-color: $colorPrincipal;                       
                     }
                 } 
             }            
@@ -102,6 +107,11 @@ main {
         img {
             width: 100%;
             height: auto;
+            -webkit-animation:flip-in-hor-bottom .5s cubic-bezier(.25,.46,.45,.94) both;animation:flip-in-hor-bottom 3.5s cubic-bezier(.25,.46,.45,.94) both;
         }        
     }
 }
+
+/* Animista */
+
+@-webkit-keyframes flip-in-hor-bottom{0%{-webkit-transform:rotateX(80deg);transform:rotateX(80deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}@keyframes flip-in-hor-bottom{0%{-webkit-transform:rotateX(80deg);transform:rotateX(80deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}

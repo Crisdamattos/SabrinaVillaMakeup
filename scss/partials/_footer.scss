@@ -20,9 +20,11 @@ footer {
 
         a {
             color: $colorPrincipal;
+            transition: 1s;
 
             &:hover {
                 color: white;
+                transform: rotate(360deg) scale(1.2);
             }
         }
     }        

@@ -31,7 +31,7 @@ main {
             }
 
         .sobremi_image {
-            grid-area: sobremi_image;
+            grid-area: sobremi_image;           
         }   
         .sobremi_parrafo {
             grid-area: sobremi_parrafo;
@@ -51,10 +51,10 @@ main {
 
         .sobremi_parrafo {
             h1 {
-                font-size: 36px;
+                font-size: 38px;
                 font-weight: 600;
                 text-align: center;
-            }
+            }            
         }
 
         div {
@@ -64,9 +64,9 @@ main {
                 border-radius: 2% 0;
                 width: 95%;
 
-                @media (max-width: 576px) {                
-                    margin-inline: 0;                      
-                }
+                    @media (max-width: 576px) {                
+                        margin-inline: 0;                      
+                    }
             }
         }
     }    
