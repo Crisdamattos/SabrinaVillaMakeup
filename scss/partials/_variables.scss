@@ -1,21 +1,7 @@
 
 $colorPrincipal: #ff00c8;
 $colorSecundario: black;
+$colorTerciario: azure;
 
-main {
-    min-height: 100vh;
-    background-color: azure;
-}
-
-    
-hr {
-    color: $colorPrincipal;
-    background-color: $colorPrincipal;
-    opacity: 1;
-    width: 40%;
-    height: .7rem;
-    
-        @media (max-width: 576px) {
-            width: 100%;
-        }
-}
+$fuentePrincipal: 'Cinzel', serif;
+$fuenteSecundaria: 'Quicksand', sans-serif;

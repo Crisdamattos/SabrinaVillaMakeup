@@ -1,22 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Quicksand:wght@400;600&display=swap");
-main {
-  min-height: 100vh;
-  background-color: azure;
-}
-
-hr {
-  color: #ff00c8;
-  background-color: #ff00c8;
-  opacity: 1;
-  width: 40%;
-  height: 0.7rem;
-}
-@media (max-width: 576px) {
-  hr {
-    width: 100%;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -101,6 +83,24 @@ p {
   }
 }
 
+hr {
+  color: #ff00c8;
+  background-color: #ff00c8;
+  opacity: 1;
+  width: 40%;
+  height: 0.7rem;
+}
+@media (max-width: 576px) {
+  hr {
+    width: 100%;
+  }
+}
+
+main {
+  min-height: 100vh;
+  background-color: azure;
+}
+
 /* Header */
 .header {
   position: sticky;
@@ -144,7 +144,7 @@ p {
 footer {
   background-color: black;
   padding-block: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 footer p {
   text-align: center;
@@ -171,7 +171,7 @@ main .desc_prom {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   padding-inline: 0.3rem;
   background-color: #a89047;
   gap: 3rem;
@@ -258,7 +258,7 @@ main .contenedor_index .index_parrafo .index_boton a:hover {
 main .contenedor_index img {
   width: 100%;
   height: auto;
-  animation: flip-in-hor-bottom 3.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: flip-in-hor-bottom 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /* Animista */

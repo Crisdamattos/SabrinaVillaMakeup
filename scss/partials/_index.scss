@@ -6,7 +6,7 @@ main {
         display: flex;
         justify-content: center;
         text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: .5rem;
         padding-inline: .3rem;
         background-color: #a89047;
         gap: 3rem;
@@ -107,7 +107,7 @@ main {
         img {
             width: 100%;
             height: auto;
-            -webkit-animation:flip-in-hor-bottom .5s cubic-bezier(.25,.46,.45,.94) both;animation:flip-in-hor-bottom 3.5s cubic-bezier(.25,.46,.45,.94) both;
+            -webkit-animation:flip-in-hor-bottom .5s cubic-bezier(.25,.46,.45,.94) both;animation:flip-in-hor-bottom 5s cubic-bezier(.25,.46,.45,.94) both;
         }        
     }
 }
