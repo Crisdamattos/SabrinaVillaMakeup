@@ -81,3 +81,8 @@ main {
     min-height: 100vh;
     background-color: $colorTerciario;
 }
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}

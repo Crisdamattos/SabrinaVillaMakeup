@@ -101,17 +101,22 @@ main {
   background-color: azure;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
 /* Header */
 .header {
   position: sticky;
   top: 0;
   z-index: 5;
 }
-.header .navbar a {
+.header .navbar .container-fluid a {
   font-size: 25px;
 }
 @media (max-width: 992px) {
-  .header .navbar a {
+  .header .navbar .container-fluid a {
     font-size: 20px;
   }
 }
@@ -229,21 +234,21 @@ main .contenedor_index .index_image3 {
 main .contenedor_index .index_parrafo {
   margin: 1rem;
 }
-main .contenedor_index .index_parrafo p {
+main .contenedor_index .index_parrafo div p {
   text-align: justify;
 }
-main .contenedor_index .index_parrafo .index_boton {
+main .contenedor_index .index_parrafo div .index_boton {
   font-size: 30px;
   margin-top: 1.5rem;
   text-align: center;
 }
 @media (max-width: 992px) {
-  main .contenedor_index .index_parrafo .index_boton {
+  main .contenedor_index .index_parrafo div .index_boton {
     font-size: 18px;
     margin-top: 0.5rem;
   }
 }
-main .contenedor_index .index_parrafo .index_boton a {
+main .contenedor_index .index_parrafo div .index_boton a {
   text-decoration: none;
   border: 2px solid #ff00c8;
   border-radius: 2%;
@@ -251,11 +256,11 @@ main .contenedor_index .index_parrafo .index_boton a {
   font-weight: 600;
   padding: 0.5rem;
 }
-main .contenedor_index .index_parrafo .index_boton a:hover {
+main .contenedor_index .index_parrafo div .index_boton a:hover {
   color: white;
   background-color: #ff00c8;
 }
-main .contenedor_index img {
+main .contenedor_index div img {
   width: 100%;
   height: auto;
   animation: flip-in-hor-bottom 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
