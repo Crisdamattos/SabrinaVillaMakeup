@@ -232,7 +232,7 @@ main .contenedor_index .index_image3 {
   grid-area: index_image3;
 }
 main .contenedor_index .index_parrafo {
-  margin: 1rem;
+  margin-inline: 1rem;
 }
 main .contenedor_index .index_parrafo div p {
   text-align: justify;
@@ -284,7 +284,6 @@ main .contenedor_sobremi {
   grid-template-rows: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
-  margin-inline: 1rem;
   gap: 1.5rem;
   aspect-ratio: 1;
   grid-template-areas: "sobremi_image sobremi_parrafo" "sobremi_image3  sobremi_image4" "sobremi_image1  sobremi_image2";
@@ -339,7 +338,6 @@ main .contenedor_servicios {
   justify-content: center;
   place-content: center;
   padding-inline: 1rem;
-  margin: 1rem;
   grid-template-areas: "servicios_parrafo1 servicios_parrafo1 servicios_image1" "servicios_parrafo3 servicios_parrafo3 servicios_image3" "servicios_parrafo2 servicios_parrafo2 servicios_image2";
 }
 @media (max-width: 800px) {
