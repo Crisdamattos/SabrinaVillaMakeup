@@ -149,7 +149,6 @@ html {
 footer {
   background-color: black;
   padding-block: 1rem;
-  margin-top: 0.5rem;
 }
 footer p {
   text-align: center;
@@ -203,7 +202,7 @@ main .contenedor_index {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-inline: 1rem;
+  padding-bottom: 0.5rem;
   grid-template-areas: "index_parrafo1  index_image1" "index_image2    index_parrafo2" "index_parrafo3  index_image3";
 }
 @media (max-width: 768px) {
